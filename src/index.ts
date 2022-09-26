@@ -7,7 +7,7 @@ export function helloWorld() {
     const message = 'Goodbye from my example modern npm package!';
     return message;
   }
-  // TODO -v3
+  console.log('test log')
   export default {
     helloWorld,
     goodBye,
