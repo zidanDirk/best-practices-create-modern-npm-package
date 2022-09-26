@@ -1,6 +1,6 @@
 {
   "name": "@zzd41/simple-npm-package",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "types": "./lib/cjs/types/index.d.ts",
   "main": "./lib/cjs/index.js",
   "scripts": {
@@ -9,11 +9,12 @@
     "build:esm": "tsc -p ./configs/tsconfig.esm.json && mv lib/esm/index.js lib/esm/index.mjs",
     "build:cjs": "tsc -p ./configs/tsconfig.cjs.json",
     "prepack": "npm run build",
-    "test": "mocha"
+    "test": "mocha",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zidanDirk/best-practices-create-modern-npm-package.git"
+    "url": "https://github.com/zidanDirk/best-practices-create-modern-npm-package.git"
   },
   "keywords": [],
   "author": "zhangzidan",
@@ -38,12 +39,19 @@
       }
     }
   },
+  "release": {
+    "branches": ["main"]
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@types/chai": "^4.3.3",
     "@types/jest": "^29.0.3",
     "@types/mocha": "^9.1.1",
     "chai": "^4.3.6",
     "mocha": "^10.0.0",
+    "semantic-release": "^19.0.5",
     "ts-node": "^10.9.1",
     "tsc": "^2.0.4",
     "typescript": "^4.8.3"
