@@ -1,0 +1,20 @@
+{
+  "name": "@zzd41/simple-npm-package",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zidanDirk/best-practices-create-modern-npm-package.git"
+  },
+  "keywords": [],
+  "author": "zhangzidan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zidanDirk/best-practices-create-modern-npm-package/issues"
+  },
+  "homepage": "https://github.com/zidanDirk/best-practices-create-modern-npm-package#readme"
+}
